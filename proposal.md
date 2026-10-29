@@ -104,7 +104,7 @@ The tolerances are research targets at a millimetre scale. They are above the ap
 
 A medical imaging researcher familiar with registration is estimated to need about three hours to inspect the acquisitions, implement and check a correspondence workflow, and produce the displacement analysis. This development estimate has not been timed in a controlled expert study.
 
-The agent must distinguish physical coordinates from array indices, handle ultrasound intensity changes and tissue removal, choose a registration strategy and its regularization, and compute trajectories across acquisitions. A standard multiscale deformable registration is sufficient when configured appropriately. We have not measured a frontier agent success rate and do not claim that this task requires a new registration algorithm. The substantive result is an anatomically verified estimate of ongoing brain displacement in a real operation.
+The agent must distinguish physical coordinates from array indices, handle ultrasound intensity changes and tissue removal, choose a registration strategy and its regularization, and compute trajectories across acquisitions. A standard multiscale deformable registration is sufficient when configured appropriately. One independent Codex run configured with gpt-6-astra and high reasoning effort passed the task in 35.4 minutes. It used multiscale registration, local image matching and visual anatomical checks, without access to the reference solution or target annotations. One run does not establish a population success rate. The task does not require a new registration algorithm. The substantive result is an anatomically verified estimate of ongoing brain displacement in a real operation.
 
 ## References & Resources
 
@@ -119,7 +119,7 @@ https://doi.org/10.1007/978-3-030-33642-4_15
 
 ## Supporting Files
 
-The implementation contains the task instructions, compact public inputs, a reference solution and a separate verifier with independent anatomical annotations.
+The complete implementation, compact inputs, reference solution, separate evaluation annotations, validation results and independently generated agent outputs are available at https://github.com/Hoyant-Su/tbs-resection-brain-shift.
 
 ## Additional Information
 

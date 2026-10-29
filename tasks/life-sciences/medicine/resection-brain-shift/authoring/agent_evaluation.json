@@ -1,0 +1,29 @@
+{
+  "model": "Codex configured with gpt-6-astra and high reasoning effort",
+  "date": "2026-10-29",
+  "execution": "Native Linux, fresh context, four CPU cores, no GPU",
+  "completed_trials": 1,
+  "successful_trials": 1,
+  "elapsed_seconds": 2121.338325,
+  "agent_budget_seconds": 28800,
+  "method": "Multiscale affine and deformable registration, local image matching, visual anatomical inspection, and comparison of direct and intermediate-to-final correspondence estimates.",
+  "result": {
+    "passed": true,
+    "metrics": {
+      "during_mean_tre_mm": 0.6635340969748666,
+      "during_p90_tre_mm": 1.3488859541396163,
+      "after_mean_tre_mm": 0.7489822713709542,
+      "after_p90_tre_mm": 1.0415477951434162,
+      "median_incremental_shift_absolute_error_mm": 0.23949761136798964
+    },
+    "limits": {
+      "during_mean_tre_mm": 2.0,
+      "during_p90_tre_mm": 4.0,
+      "after_mean_tre_mm": 2.5,
+      "after_p90_tre_mm": 4.0,
+      "median_incremental_shift_absolute_error_mm": 1.0,
+      "summary_consistency_atol_mm": 0.0001
+    }
+  },
+  "limitations": "A single successful trial does not estimate a population success rate. This was native execution, not a Harbor container run."
+}
